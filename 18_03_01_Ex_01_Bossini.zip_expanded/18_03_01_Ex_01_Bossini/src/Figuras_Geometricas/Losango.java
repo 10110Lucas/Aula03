@@ -1,8 +1,8 @@
 package Figuras_Geometricas;
 
-public class Triangulo extends Poligono{
-	
-	public Triangulo(double altura, double base) {
+public class Losango extends Poligono{
+
+	public Losango(double altura, double base) {
 		super(altura, base);
 	}
 	@Override
@@ -23,13 +23,13 @@ public class Triangulo extends Poligono{
 	}
 	@Override
 	public double area() {
-		return getBase() * getAltura() / 2;
+		return (getAltura() * getBase()) / 2;
 	}
 	@Override
 	public String toString() {
-		return "-----Triangulo----\n"+
-		        "[ Altura: "+ getAltura() +
-		        " ]\n[ Base: "+ getBase() +
-		        " ]\n[ Area: "+ area()+" ]";
+		return "-----Losango------\n"+
+        "[ Altura: "+ getAltura() +
+        " ]\n[ Base: "+ getBase() +
+        " ]\n[ Area: "+ area()+" ]";
 	}
 }
